@@ -9,12 +9,11 @@ public class App {
         String line = Reader.read();
         String[] words = getSeparatedWords(line);
 
-        System.out.println(makeString(words));
-
         Arrays.sort(words);
 
         System.out.println(makeString(words));
 
+        System.out.println("Total words: " + words.length);
     }
 
     private static String[] getSeparatedWords(String line) {
